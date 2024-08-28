@@ -1,0 +1,50 @@
+M = ["isaac", "eleadis", "luis", "pedro", "juan", "jesus"]
+
+print("    Menu Principal  ")
+print("1 Crear personas")
+print("2 Eliminar lista")
+print("3 Lista persona")
+print("4 Buscar persona")
+print("5 Salir")
+    
+Menu = int(input("Elija una opción: "))
+    
+if Menu == 1:
+        m1 = input("Ingresa nombre de la persona: ")
+        M.append(m1)
+        print("Lista actualizada:", M)
+        
+        
+elif Menu == 2:
+        m2 = input("Ingresa el nombre que quieres eliminar (isaac, eleadis, luis, pedro, juan, jesus): ") 
+        if m2 in M:
+            M.remove(m2)
+            print("Lista actualizada:", M)
+        else:
+            print("La persona no está en la lista.")
+        
+        
+elif Menu == 3:
+        print("Lista actual:", M)
+      
+        
+elif Menu == 4:
+        m3 = input("Ingresa el nombre de la persona que quieres buscar: ")
+        if m3 in M:
+            print("La persona está en la lista.")
+        else:
+            print("La persona no está en la lista.")
+       
+        
+elif Menu == 5:
+        print("FIN, QUE TENGA UN BUEN XD :) ")
+
+        
+else:
+        print("Opción no válida. Intente nuevamente.")
+        
+
+
+
+
+
